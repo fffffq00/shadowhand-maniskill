@@ -28,3 +28,5 @@ Running `python robots/shadowhand.py` will load the robot into an empty maniskil
 
 # Note
 SAPIEN does not allow too many ignored collision groups when loading the robot's srdf file([urdf_loader](https://github.com/haosulab/SAPIEN/blob/3.0.0dev/python/py_package/wrapper/urdf_loader.py#L589)), so I only added a small number of groups.
+
+The mesh files of multiple shadowhand versions have not been removed for the time being. I will clean up the irrelevant code in the future.
