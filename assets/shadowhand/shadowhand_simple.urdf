@@ -80,26 +80,6 @@
           <capsule length="0.12" radius="0.068"/>
         </geometry>
     </collision>
-    <!-- wrist mount -->
-    <!-- <visual>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry name="rh_mounting_plate">
-        <mesh filename="meshes/components/mounting_plate/mounting_plate_E3M5.glb"/>
-      </geometry>
-    </visual>
-    <collision>
-      <origin rpy="0 0 0" xyz="0 0 0.002"/>
-      <geometry>
-        <cylinder length="0.008" radius="0.0675"/>
-      </geometry>
-    </collision> -->
-    <!-- TODO: Make a decision on whether to add the connector or not -->
-    <!--visual>
-        <origin rpy="0 -1.57 -1.57" xyz="0.0 0.067 0.0045"/>
-        <geometry name="${prefix}cable_extr_visualisation">
-          <mesh filename="meshes/components/cable_connector/cable_connector_base_${hand_version}.dae" scale="0.001 0.001 0.001" />
-        </geometry>
-      </visual-->
   </link>
   <gazebo reference="rh_forearm">
     <selfCollide>false</selfCollide>
@@ -997,67 +977,6 @@
         <box size="0.015 0.010 0.032"/>
     </geometry>
     </collision> 
-    <!-- <collision>
-    <origin rpy="0 0 0" xyz="0 0 0"/>
-    <geometry name="rh_lfproximal_collision_geom">
-        <mesh filename="meshes/components/f_proximal/f_proximal_e3m5/0.obj"/>
-    </geometry>
-    </collision> 
-    <collision>
-        <origin rpy="0 0 0" xyz="0 0 0"/>
-        <geometry name="rh_lfproximal_collision_geom">
-            <mesh filename="meshes/components/f_proximal/f_proximal_e3m5/1.obj"/>
-        </geometry>
-    </collision> 
-    <collision>
-        <origin rpy="0 0 0" xyz="0 0 0"/>
-        <geometry name="rh_lfproximal_collision_geom">
-            <mesh filename="meshes/components/f_proximal/f_proximal_e3m5/2.obj"/>
-        </geometry>
-    </collision> 
-    <collision>
-        <origin rpy="0 0 0" xyz="0 0 0"/>
-        <geometry name="rh_lfproximal_collision_geom">
-            <mesh filename="meshes/components/f_proximal/f_proximal_e3m5/3.obj"/>
-        </geometry>
-    </collision> 
-    <collision>
-        <origin rpy="0 0 0" xyz="0 0 0"/>
-        <geometry name="rh_lfproximal_collision_geom">
-            <mesh filename="meshes/components/f_proximal/f_proximal_e3m5/4.obj"/>
-        </geometry>
-    </collision> 
-    <collision>
-        <origin rpy="0 0 0" xyz="0 0 0"/>
-        <geometry name="rh_lfproximal_collision_geom">
-            <mesh filename="meshes/components/f_proximal/f_proximal_e3m5/5.obj"/>
-        </geometry>
-    </collision> 
-    <collision>
-        <origin rpy="0 0 0" xyz="0 0 0"/>
-        <geometry name="rh_lfproximal_collision_geom">
-            <mesh filename="meshes/components/f_proximal/f_proximal_e3m5/6.obj"/>
-        </geometry>
-    </collision> 
-    <collision>
-        <origin rpy="0 0 0" xyz="0 0 0"/>
-        <geometry name="rh_lfproximal_collision_geom">
-            <mesh filename="meshes/components/f_proximal/f_proximal_e3m5/7.obj"/>
-        </geometry>
-    </collision> 
-    <collision>
-        <origin rpy="0 0 0" xyz="0 0 0"/>
-        <geometry name="rh_lfproximal_collision_geom">
-            <mesh filename="meshes/components/f_proximal/f_proximal_e3m5/8.obj"/>
-        </geometry>
-    </collision> 
-    <collision>
-        <origin rpy="0 0 0" xyz="0 0 0"/>
-        <geometry name="rh_lfproximal_collision_geom">
-            <mesh filename="meshes/components/f_proximal/f_proximal_e3m5/9.obj"/>
-        </geometry>
-    </collision>       -->
-
   </link>
   <joint name="rh_LFJ3" type="revolute">
     <parent link="rh_lfknuckle"/>
@@ -1204,16 +1123,7 @@
       <geometry name="rh_thbase_visual">
         <box size="0.001 0.001 0.001"/>
       </geometry>
-      <!-- <material name="shadow_thbase_material">
-        <color rgba="0.5 0.5 0.5 1.0"/>
-      </material> -->
     </visual>
-    <!-- <collision>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry name="rh_thbase_collision_geom">
-        <sphere radius="0.011"/>
-      </geometry>
-    </collision> -->
   </link>
   <joint name="rh_THJ5" type="revolute">
     <parent link="rh_palm"/>
@@ -1253,18 +1163,6 @@
         <mesh filename="meshes/components/th_proximal/th_proximal_E3M5.glb"/>
       </geometry>
     </visual>
-    <!-- <collision>
-      <origin rpy="0 0 0" xyz="0 0 0.0"/>
-      <geometry name="rh_thproximal_collision_geom">
-        <mesh filename="meshes/components/th_proximal/th_proximal_e3m5/0.obj" />
-      </geometry>
-    </collision>
-    <collision>
-        <origin rpy="0 0 0" xyz="0 0 0.0"/>
-        <geometry name="rh_thproximal_collision_geom">
-          <mesh filename="meshes/components/th_proximal/th_proximal_e3m5/1.obj"/>
-        </geometry>
-    </collision> -->
     <collision>
         <origin rpy="0 0 0" xyz="0 0 0.02"/>
         <geometry name="rh_thproximal_collision_geom">
@@ -1308,16 +1206,7 @@
       <geometry name="rh_thhub_visual">
         <box size="0.001 0.001 0.001"/>
       </geometry>
-      <!-- <material name="shadow_thhub_material">
-        <color rgba="0.7 0.7 0.7 1.0"/>
-      </material> -->
     </visual>
-    <!-- <collision>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry name="rh_thhub_collision_geom">
-        <sphere radius="0.010"/>
-      </geometry>
-    </collision> -->
   </link>
   <joint name="rh_THJ3" type="revolute">
     <parent link="rh_thproximal"/>
@@ -1356,9 +1245,6 @@
       <geometry name="rh_thmiddle_visual">
         <mesh filename="meshes/components/th_middle/th_middle_E3M5.glb"/>
       </geometry>
-      <!-- <material name="shadow_thmiddle_material">
-        <color rgba="0.2 0.2 0.2 1.0"/>
-      </material> -->
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0.020"/>
@@ -1366,18 +1252,6 @@
         <capsule length="0.030" radius="0.010"/>
       </geometry>
     </collision>
-    <!-- <collision>
-      <origin rpy="0 0 0" xyz="0 0 0.019"/>
-      <geometry>
-        <sphere radius="0.011"/>
-      </geometry>
-    </collision> -->
-    <!-- <collision>
-      <origin rpy="0 1.5708 0" xyz="0 0 0.032"/>
-      <geometry>
-        <cylinder length="0.014" radius="0.010"/>
-      </geometry>
-    </collision> -->
   </link>
   <joint name="rh_THJ2" type="revolute">
     <parent link="rh_thhub"/>
