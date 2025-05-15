@@ -97,8 +97,8 @@ class ShadowHand(BaseAgent):
 
         pd_joint_delta_pos_3e1 = PDJointPosControllerConfig(
             joints_part_with_force_3e1,
-            lower=None,
-            upper=None,
+            -0.1,
+            0.1,
             stiffness=self.stiffness,
             damping=self.damping,
             force_limit=3e1,
