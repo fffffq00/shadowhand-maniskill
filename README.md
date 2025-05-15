@@ -5,6 +5,9 @@ This repo stores URDF and SRDF configurations for Shadowhand that can be loaded 
 
 I made some changes in the configuration files that come from [shadow-robot](https://github.com/shadow-robot), including the loading files for the visual bodies and the simplification of the collision bodies. 
 
+The `shadowhand.urdf` is the original configuration and `shadowhand_simple.urdf` is the modified configuration.
+
+
 # RUN Test
 This repository uses Python version 3.12.2.
 ```
